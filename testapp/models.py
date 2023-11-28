@@ -1,5 +1,7 @@
 from django.db import models
 
+class TestGit(models.Model):
+    testField = models.TextField()
 
 class User(models.Model):
     first_name = models.TextField()
