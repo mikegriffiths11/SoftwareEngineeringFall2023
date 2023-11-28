@@ -17,3 +17,10 @@ class Term(models.Model):
 
 
 # Create your models here.
+class StepInTheProcess(models.Model):
+class vegitableCustomization(StepInTheProcess):
+    pass
+class sauceCustomization(StepInTheProcess):
+    pass
+class baseBuild(StepInTheProcess):
+    pass
