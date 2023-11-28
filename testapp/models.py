@@ -131,3 +131,13 @@ class ItemInAMenuItem(models.Model):
     item = models.ForeignKey(Item, on_delete=models.CASCADE, related_name='i_through')
     quantity = models.IntegerField(default=1)
 >>>>>>> fe6043dd1decfa51a8a7b8c41a46c61b04613dfc
+
+class Beverage(models.Model):
+    name = models.TextField()
+    quantity = models.IntegerField()
+class TestGit(models.Model):
+    testField = models.TextField()
+
+class User(models.Model):
+    first_name = models.TextField()
+    last_name = models.TextField()
