@@ -1,19 +1,10 @@
 from django.db import models
-from django.db import models
 
-class Term(models.Model):
-    school_year = models.IntegerField()
-    term_id = models.IntegerField()
-    start_date = models.DateField(null=True, blank=True)
-    end_date = models.DateField(null=True, blank=True)
+class Beverage(models.Model):
+    name = models.TextField()
+    quantity = models.IntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-
     @property
-    def year_term(self):
-        return str(self.school_year) + str(self.term_id)
-
-
-
-
-# Create your models here.
+    def full_name(self):
+        return str(self.first_name) + ' ' + str(self.last_name)
