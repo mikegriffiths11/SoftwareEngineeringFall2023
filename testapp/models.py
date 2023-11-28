@@ -131,3 +131,7 @@ class ItemInAMenuItem(models.Model):
     item = models.ForeignKey(Item, on_delete=models.CASCADE, related_name='i_through')
     quantity = models.IntegerField(default=1)
 >>>>>>> fe6043dd1decfa51a8a7b8c41a46c61b04613dfc
+
+class POGGERS(models.Model):
+    pog = models.TextField()
+    howPog = models.IntegerField()
